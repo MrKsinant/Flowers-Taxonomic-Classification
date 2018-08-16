@@ -9,8 +9,8 @@ This classification is challenged by some relevant difficulties:
 * There are categories that have large variations within the category;
 * There are several very similar categories.
 
-In this repository, you will find the following folders and files:
-* The file ***Image Classifier Project.ipynb***, the Jupyter Notebook which contains all the detailed and explained study, accompanied by the results obtained;
+In this repository, you will find the following files and folders:
+* The file ***flowers-taxonomic-classification.ipynb***, the Jupyter Notebook which contains all the detailed and explained study, accompanied by the results obtained;
 * The file ***train.py***, a command line Python script which allows the user to perform a training to generate a consistent and performant deep learning model for a taxonomic classification of flowers;
 * The file ***predict.py***, a command line Python script which allows the user to perform a prediction on a submitted flower image and to determine its top *k* most likely belonging categories (this prediction is based on a model the user has to provide);
 * The files *cat_to_name.json* and *class_to_idx.json*, which contain dictionaries linking category labels to category names, and indices to category labels, to move smoothly inside the dataset;
