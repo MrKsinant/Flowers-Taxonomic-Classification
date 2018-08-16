@@ -1,0 +1,4 @@
+# Epoch, Training Loss, Training Accuracy, Validation Loss, Validation Accuracy
+1 419.42 13.23 104.96 13.20
+2 327.60 38.83 80.39 40.10
+3 240.92 51.68 58.48 51.47
