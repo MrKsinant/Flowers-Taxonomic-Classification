@@ -1,6 +1,6 @@
 # Flowers Taxonomic Classification
 
-This study is part of the final project of Nanodegree *AI Programming With Python* schooled by **Udacity, Inc.** (https://eu.udacity.com), a for-profit educational organization offering massive open online courses.
+This study corresponds to the final project of Nanodegree *AI Programming With Python* schooled by **Udacity, Inc.** (https://eu.udacity.com), a for-profit educational organization offering massive open online courses.
 
 Its goal is to provide a deep learning algorithm that can perform a **taxonomic classification of flowers** based on the dataset capitalized by the Visual Geometry Group of the University of Oxford, consisting of 102 flower categories commonly occuring in the United Kingdom (Each class consists of between 40 and 258 images, further details and the complete dataset can be found here: http://www.robots.ox.ac.uk/~vgg/data/flowers/102/index.html).
 
@@ -21,7 +21,7 @@ In this repository, you will find the following files and folders:
 * The folder *outputs*, which contains the result images after model predictions;
 * The folder *training*, which contains the various logs generated during the training phase of the model (logs allowing to plot the graphs present in the folder *graphs*).
 
-Due to the fact of the generated models weights (approximately 115 Mo for each), I did not provide in the repository the folder *models*, which is used in the study to store the various generated models. I also did not provide the folder *flowers* (approximately 365 Mo), which contains the complete dataset and can be found at the location specified at the beginning of this README file.
+Due to the fact of the generated models weights (approximately 115 Mo for each), the folder *models*, which is used in the study to store the various generated models, has not been provided. This is also not the case for the folder *flowers* (approximately 365 Mo), which contains the complete dataset and can be found at the location specified at the beginning of this README file.
 
 As an other (and last) remark, it can be noticed that the parameters and the structure of the built neural networks are different in the Jupyter Notebook from the ones present in the two command line Python scripts: This is due to precise specifications provided by Udacity to write these two command line Python scripts (Enter in a terminal the command `python train.py --help` and the command `python predict.py --help` to obtain further details about the way to correctly run these two command line Python scripts).
 
