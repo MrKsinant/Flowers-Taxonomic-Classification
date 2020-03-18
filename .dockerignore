@@ -1,0 +1,22 @@
+# Jupyter Notebook:
+.ipynb_checkpoints
+*/.ipynb_checkpoints
+
+# Unused animation files:
+animation/demo.gif
+animation/demo.png
+animation/demo.webm
+
+# Unused inference:
+inference/image.jpg
+inference/input.jpg
+inference/output.jpg
+
+# Unused models:
+models/arch_densenet161_lr_0.01_hu_250_epochs_1.pth
+models/arch_vgg16_lr_0.01_hu_250_epochs_2.pth
+models/best-model_CPU.onnx
+models/densenet161-checkpoint-1-EXAMPLE.pth
+models/densenet161-checkpoint-2-EXAMPLE.pth
+models/densenet161-checkpoint-3-EXAMPLE.pth
+models/rebuilt-model_CPU.pth
