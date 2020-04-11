@@ -27,7 +27,7 @@ import argparse, os, torch, time, sys
 from torch import nn, optim
 from torchvision import datasets, transforms, models
 from collections import OrderedDict
-from workspace_utils import active_session
+from workspace import active_session
 
 #########################
 # Main program function #
@@ -152,7 +152,7 @@ def main():
 
     # Create a performance tracking file for the training session:
 
-    performance_file = open('performance-tracking.txt', 'w')
+    performance_file = open('../graphs/performance-tracking.txt', 'w')
     performance_file.write("# Epoch, Training Loss, Training Accuracy, Validation Loss, Validation Accuracy\n")
     performance_file.close()
 
@@ -211,7 +211,7 @@ def main():
             print("Training: Loss... {:.2f},".format(running_loss),
                   "Accuracy... {:.2f}%".format(100 * correct / total))
 
-            performance_file = open('performance-tracking.txt', 'a')
+            performance_file = open('../graphs/performance-tracking.txt', 'a')
             performance_file.write("{} {:.2f} {:.2f}".format(e+1, running_loss, 100 * correct / total))
 
             # Check loss and accuracy on the validation dataset:

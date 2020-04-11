@@ -1,6 +1,15 @@
 # Jupyter Notebook
 .ipynb_checkpoints
+*/.ipynb_checkpoints
+*/*/.ipynb_checkpoints
 
 # Apple Desktop Services Store
 .DS_Store
 */.DS_Store
+*/*/.DS_Store
+
+# Folders To Ignore
+data/test
+data/train
+data/valid
+models

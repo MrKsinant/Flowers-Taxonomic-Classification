@@ -44,7 +44,7 @@ def active_session(delay=DELAY, interval=INTERVAL):
     """
     Example:
 
-    from workspace_utils import active session
+    from workspace import active_session
 
     with active_session():
         # do long-running work here
@@ -66,7 +66,7 @@ def keep_awake(iterable, delay=DELAY, interval=INTERVAL):
     """
     Example:
 
-    from workspace_utils import keep_awake
+    from workspace import keep_awake
 
     for i in keep_awake(range(5)):
         # do iteration with lots of work here

@@ -15,12 +15,13 @@ LABEL version="1.0"
 
 # Create app architecture:
 COPY app_streamlit.py /home/app_streamlit.py
-COPY app_workflow.py /home/app_workflow.py
-COPY cat_to_name.json /home/cat_to_name.json
-COPY class_to_idx.json /home/class_to_idx.json
-COPY animation/ /home/animation/
+COPY utils.py /home/utils.py
+COPY images/web_app_logo.jpg /home/images/web_app_logo.jpg
+COPY data/cat_to_name.json /home/data/cat_to_name.json
+COPY data/class_to_idx.json /home/data/class_to_idx.json
+COPY models/best-model_CUDA.pth /home/models/best-model_CUDA.pth
+COPY models/best-model_CPU.pth /home/models/best-model_CPU.pth
 COPY inference/ /home/inference/
-COPY models/ /home/models/
 
 # Install required packages:
 RUN conda install -c anaconda python==3.6.10

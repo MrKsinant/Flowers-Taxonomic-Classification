@@ -175,7 +175,7 @@ def predict_image(image_path, chosen_model, top_k, category_names=None, gpu=Fals
         model.to('cpu')
 
     # Create a dictionary which maps from category labels to indices:
-    with open('class_to_idx.json', 'r') as class_to_idx_file:
+    with open('../data/class_to_idx.json', 'r') as class_to_idx_file:
         class_to_idx = json.load(class_to_idx_file)
 
     # Create a dictionary which maps from indices to category labels:

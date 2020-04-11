@@ -138,7 +138,7 @@ def predict_image(img_array, gpu=False):
         model = torch.load('models/best-model_CPU.pth')
 
     # Create a dictionary which maps from category labels to indices:
-    with open('class_to_idx.json', 'r') as class_to_idx_file:
+    with open('data/class_to_idx.json', 'r') as class_to_idx_file:
         class_to_idx = json.load(class_to_idx_file)
 
     # Create a dictionary which maps from indices to category labels:
@@ -146,7 +146,7 @@ def predict_image(img_array, gpu=False):
                             class_to_idx.keys()))
     
     # Create a dictionary which maps from category labels to category names:
-    with open('cat_to_name.json', 'r') as category_names_file:
+    with open('data/cat_to_name.json', 'r') as category_names_file:
         cat_to_name = json.load(category_names_file)
 
     # Image classification by the chosen model on chosen mode:

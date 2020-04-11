@@ -17,7 +17,7 @@
 import os, torch
 import streamlit as st
 from PIL import Image
-from app_workflow import process_image, predict_image, visualize_prediction
+from utils import process_image, predict_image, visualize_prediction
 
 
 ######################
@@ -25,8 +25,8 @@ from app_workflow import process_image, predict_image, visualize_prediction
 ######################
 
 INFERENCE_FOLDER = 'inference/'
-ALLOWED_EXTENSIONS = ['png', 'jpg', 'jpeg', 'gif']
-VGG_LOGO = 'animation/vgg_logo.png'
+ALLOWED_EXTENSIONS = ['png','PNG', 'jpg', 'JPG', 'jpeg', 'JPEG', 'gif', 'GIF']
+WEB_APP_LOGO = 'images/web_app_logo.jpg'
 
 
 #################################
@@ -34,17 +34,16 @@ VGG_LOGO = 'animation/vgg_logo.png'
 #################################
 
 # Display title:
-st.title('Flowers Taxonomic Classification')
+st.title('Flowers Taxonomic Classification Web App')
 
 # Display a zone for uploading a picture:
-uploaded_file = st.file_uploader('Upload a picture representing a flower to identify it:',
+uploaded_file = st.file_uploader('Upload a picture representing a flower to identify:',
                                  type=ALLOWED_EXTENSIONS)
 
 # Display a sidebar zone:
-st.sidebar.markdown('Made (with love) thanks to:')
-st.sidebar.image(VGG_LOGO, use_column_width=True)
-st.sidebar.markdown('**Visual Geometry Group**')
-st.sidebar.markdown('Department of Engineering Science, University of Oxford.')
+st.sidebar.markdown('**Flowers Taxonomic Classification Web App**')
+st.sidebar.image(WEB_APP_LOGO, use_column_width=True)
+st.sidebar.markdown('Made (with love) in 2020')
 
 # Trained deep learning model in action:
 if uploaded_file is not None:
@@ -72,4 +71,5 @@ if uploaded_file is not None:
     st.image(output_img, use_column_width=True)
     st.markdown('---')
     st.markdown('Uploaded picture\'s **flower specie prediction**:')
-    st.write(classes[4])
+    specie_prediction = classes[4].upper()
+    st.markdown(f'**{specie_prediction}**')
