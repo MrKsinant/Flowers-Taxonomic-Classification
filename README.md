@@ -2,7 +2,7 @@
 
 This work takes its roots in a study corresponding to the final validation project of the nanodegree *AI Programming With Python*, schooled by **Udacity, Inc.** (https://eu.udacity.com), a for-profit educational organization offering massive open online courses.
 
-Its goal was to provide a deep learning algorithm that can perform a **taxonomic classification of flowers** based on the dataset capitalized by the Visual Geometry Group of the University of Oxford, consisting of 102 flower categories commonly occuring in the United Kingdom (Each class consists of between 40 and 258 images, further details and the complete dataset can be found here: http://www.robots.ox.ac.uk/~vgg/data/flowers/102/index.html).
+Its goal is to provide a deep learning algorithm that can perform a **taxonomic classification of flowers** based on the dataset capitalized by the Visual Geometry Group of the University of Oxford, consisting of 102 flower categories commonly occuring in the United Kingdom (Each class consists of between 40 and 258 images, further details and the complete dataset can be found here: http://www.robots.ox.ac.uk/~vgg/data/flowers/102/index.html).
 
 This classification task is challenged by some relevant difficulties:
 * The images have large scale, pose and light variations;
