@@ -30,6 +30,4 @@ Finally, to conclude, respectively to the requirements, it can be said that the 
 
 Below, you can find an animation illustrating the web app in action:
 
-<p align="center">
-    ![Web App Demo](animation/demo.gif)
-</p>
+![Web App Demo](animation/demo.gif)
